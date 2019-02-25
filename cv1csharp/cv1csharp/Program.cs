@@ -34,7 +34,7 @@ namespace cv1csharp
         }
         static void Main(string[] args)
         {
-            Console.Write("Hello world!");
+            /*Console.Write("Hello world!");
             //Console.ReadLine();
             Console.WriteLine("You sure?"); //zkracene cw tab
             uint count = GetCount(args);
@@ -61,7 +61,11 @@ namespace cv1csharp
                 }
                 gretingsBuilder.Append("!");
                 Console.WriteLine(gretingsBuilder.ToString());
-            }
+            }*/
+
+            Person pres = new Person();
+            Address add = new Address();
+            //Console.WriteLine(pres, add);
             
         }
         //vyresit aby za poslednim again nebyla mezera
