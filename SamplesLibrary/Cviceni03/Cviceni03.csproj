@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cv2csharp\Utils\Utils.csproj">
+      <Project>{e24ec280-3091-4c0a-b917-c592678b3d3e}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SamplesLibrary\SamplesLibrary.csproj">
+      <Project>{dad43038-025f-4803-9624-9fb5e093c448}</Project>
+      <Name>SamplesLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,13 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ConversionTest.cs" />
+    <Compile Include="OverflowUnderflow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cviceni03\Cviceni03.csproj">
-      <Project>{2d27dc83-4299-4f8d-bd21-4027407ec65e}</Project>
-      <Name>Cviceni03</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

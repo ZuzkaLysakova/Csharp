@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cviceni03.SamplesLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,11 @@ namespace Cviceni03
     {
         static void Main(string[] args)
         {
-            RandomNumberGenerator.Next();
+            Console.WriteLine($"Random number: {RandomNumberGenerator.Next()}");
+            //RandomNumberGenerator.Next();
+            ConversionTest.DoIt();
+            OverflowUnderflow.DoIt();
+
         }
     }
 }
