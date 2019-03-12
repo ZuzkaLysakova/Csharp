@@ -37,10 +37,21 @@ namespace Delegat
             }
 
         }
-        public void SeradStudenty(PorovnavacStudentu porovnavacStudentu)
+        public void SeradStudentypodleId(PorovnavacStudentu porovnavacStudentu)
         {
 
         }
+
+        public void SeradStudentypodleJmena(PorovnavacStudentu porovnavacStudentu)
+        {
+
+        }
+
+        public void SeradStudentypodleFakulty(PorovnavacStudentu porovnavacStudentu)
+        {
+
+        }
+
     }
 
     class Program
