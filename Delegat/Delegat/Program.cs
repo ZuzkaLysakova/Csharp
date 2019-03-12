@@ -59,7 +59,13 @@ namespace Delegat
         static void Main(string[] args)
         {
             Studenti studenti = new Studenti();
-
+            Console.WriteLine("Možnosti:");
+            Console.WriteLine("0- ukonči program");
+            Console.WriteLine("1- načti z klávesnice");
+            Console.WriteLine("2- vypiš všechny studenty");
+            Console.WriteLine("3- seřaď podle id");
+            Console.WriteLine("4- seřaď podle jména");
+            Console.WriteLine("5- seřaď podle fakulty");
             int prikaz = 0;
             switch (prikaz)
             {
@@ -67,7 +73,11 @@ namespace Delegat
                     Environment.Exit(0);
                     break;
                 case 1:
+                    Console.WriteLine("Zadej id: ");
 
+                    Console.WriteLine("Zadej jmeno: ");
+
+                    Console.WriteLine("Zadej fakultu: ");
                     break;
                 case 2:
                     studenti.VypisStudenty();
