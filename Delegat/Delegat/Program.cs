@@ -22,7 +22,7 @@ namespace Delegat
     class Studenti
     {
         private Student[] studenti;
-        int pocet;
+        int pocet = 0;
         public Studenti()
         {
             studenti = new Student[10];
@@ -39,17 +39,35 @@ namespace Delegat
         }
         public void SeradStudentypodleId(PorovnavacStudentu porovnavacStudentu)
         {
-
+            for (int i = 0; i < studenti.Length; i++)
+            {
+                for (int j = 0; j < studenti.Length - 1; j++)
+                {
+                    
+                }
+            }
         }
 
         public void SeradStudentypodleJmena(PorovnavacStudentu porovnavacStudentu)
         {
+            for (int i = 0; i < studenti.Length; i++)
+            {
+                for (int j = 0; j < studenti.Length - 1; j++)
+                {
 
+                }
+            }
         }
 
         public void SeradStudentypodleFakulty(PorovnavacStudentu porovnavacStudentu)
         {
+            for (int i = 0; i < studenti.Length; i++)
+            {
+                for (int j = 0; j < studenti.Length - 1; j++)
+                {
 
+                }
+            }
         }
 
     }
