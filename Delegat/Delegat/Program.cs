@@ -23,7 +23,7 @@ namespace Delegat
     {
         private Student[] studenti;
         int pocet = 0;
-
+        Studenti pom = null;
         public Studenti()
         {
             studenti = new Student[10];
@@ -44,9 +44,11 @@ namespace Delegat
             {
                 for (int j = 0; j < studenti.Length - 1; j++)
                 {
-                    if (porovnavacStudentu(studenti[i], studenti[j+1]) > 0)
+                    if (porovnavacStudentu(studenti[j], studenti[j+1]) > 0)
                     {
-                        
+                        pom = studenti[j + 1];
+                        studenti[j + 1] = studenti[j];
+                        studenti[j] = pom;
                     }
                 }
             }
