@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.butnPřidej = new System.Windows.Forms.Button();
+            this.butnPridej = new System.Windows.Forms.Button();
             this.butnVymaz = new System.Windows.Forms.Button();
             this.butnUprav = new System.Windows.Forms.Button();
             this.butnNejlepsi = new System.Windows.Forms.Button();
@@ -40,15 +40,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHraci)).BeginInit();
             this.SuspendLayout();
             // 
-            // butnPřidej
+            // butnPridej
             // 
-            this.butnPřidej.Location = new System.Drawing.Point(592, 33);
-            this.butnPřidej.Name = "butnPřidej";
-            this.butnPřidej.Size = new System.Drawing.Size(118, 27);
-            this.butnPřidej.TabIndex = 0;
-            this.butnPřidej.Text = "Přidat";
-            this.butnPřidej.UseVisualStyleBackColor = true;
-            this.butnPřidej.Click += new System.EventHandler(this.butnPřidej_Click);
+            this.butnPridej.Location = new System.Drawing.Point(592, 33);
+            this.butnPridej.Name = "butnPridej";
+            this.butnPridej.Size = new System.Drawing.Size(118, 27);
+            this.butnPridej.TabIndex = 0;
+            this.butnPridej.Text = "Přidat";
+            this.butnPridej.UseVisualStyleBackColor = true;
+            this.butnPridej.Click += new System.EventHandler(this.butnPridej_Click);
             // 
             // butnVymaz
             // 
@@ -141,7 +141,7 @@
             this.Controls.Add(this.butnNejlepsi);
             this.Controls.Add(this.butnUprav);
             this.Controls.Add(this.butnVymaz);
-            this.Controls.Add(this.butnPřidej);
+            this.Controls.Add(this.butnPridej);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LigaMistru";
             this.Text = "Liga Mistrů";
@@ -153,15 +153,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button butnPřidej;
+        private System.Windows.Forms.Button butnPridej;
         private System.Windows.Forms.Button butnVymaz;
         private System.Windows.Forms.Button butnUprav;
         private System.Windows.Forms.Button butnNejlepsi;
         private System.Windows.Forms.Button butnRegistruj;
         private System.Windows.Forms.Button butnZrusRegis;
         private System.Windows.Forms.Button butnUkonci;
-        private System.Windows.Forms.DataGridView dataGridViewHraci;
         private System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.DataGridView dataGridViewHraci;
     }
 }
 

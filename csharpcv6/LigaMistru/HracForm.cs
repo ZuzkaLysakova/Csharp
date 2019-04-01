@@ -12,6 +12,8 @@ namespace LigaMistru
 {
     public partial class HracForm : Form
     {
+        private LigaMistru liga;
+
         public HracForm()
         {
             InitializeComponent();
@@ -21,15 +23,23 @@ namespace LigaMistru
             comboBoxKluby.Items.Add("Real_Madrid");
             comboBoxKluby.Items.Add("Chelsea");
             comboBoxKluby.Items.Add("Barcelona");
+
+        }
+        public HracForm(LigaMistru form1)
+        {
+            InitializeComponent();
+            this.liga = form1;
         }
 
         private void butnOkey_Click(object sender, EventArgs e)
         {
-            FotbalovyKlub fk;
-            textBoxJmeno.Text = "";
-            
-            textBoxGoly.Text = "";
+            //FotbalovyKlub fk;
+            //liga.dataGridViewHraci. = textBoxJmeno.Text;
+            //= (FotbalovyKlub) comboBoxKluby.SelectedItem;
+            //= textBoxGoly.Text;
+            liga.dataGridViewHraci.Rows.Add(textBoxJmeno.Text, (FotbalovyKlub)comboBoxKluby.SelectedItem, textBoxGoly.Text);
             butnOkey.DialogResult = DialogResult.OK;
+            
         }
 
         private void butnStornuj_Click(object sender, EventArgs e)

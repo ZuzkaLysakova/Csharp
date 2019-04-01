@@ -107,7 +107,7 @@
             this.comboBoxKluby.Size = new System.Drawing.Size(121, 24);
             this.comboBoxKluby.TabIndex = 7;
             // 
-            // Hrac
+            // HracForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Hrac";
+            this.Name = "HracForm";
             this.Text = "Hráč";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -134,8 +134,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button butnOkey;
         private System.Windows.Forms.Button butnStornuj;
-        private System.Windows.Forms.TextBox textBoxJmeno;
-        private System.Windows.Forms.TextBox textBoxGoly;
-        private System.Windows.Forms.ComboBox comboBoxKluby;
+        public System.Windows.Forms.TextBox textBoxJmeno;
+        public System.Windows.Forms.TextBox textBoxGoly;
+        public System.Windows.Forms.ComboBox comboBoxKluby;
     }
 }

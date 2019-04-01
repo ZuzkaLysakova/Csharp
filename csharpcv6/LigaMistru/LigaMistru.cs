@@ -30,18 +30,21 @@ namespace LigaMistru
 
         private void butnVymaz_Click(object sender, EventArgs e)
         {
-
+            dataGridViewHraci.Rows.Clear();
         }
 
-        private void butnPřidej_Click(object sender, EventArgs e)
-        {
-            HracForm hrac = new HracForm();
-            hrac.ShowDialog();
-        }
+
 
         private void butnUprav_Click(object sender, EventArgs e)
         {
+            HracForm hrac = new HracForm();
 
+            hrac.textBoxJmeno.Text = dataGridViewHraci.CurrentRow.Cells[0].Value.ToString();
+            hrac.comboBoxKluby.Text = dataGridViewHraci.CurrentRow.Cells[1].Value.ToString();
+            hrac.textBoxGoly.Text = dataGridViewHraci.CurrentRow.Cells[2].Value.ToString();
+            hrac.ShowDialog();
+            
+            //dataGridViewHraci.Rows.Add(HracForm.);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -68,6 +71,14 @@ namespace LigaMistru
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void butnPridej_Click(object sender, EventArgs e)
+        {
+            HracForm hrac = new HracForm();
+
+            hrac.ShowDialog();
+            dataGridViewHraci.Rows.Add(hrac.textBoxJmeno.Text, hrac.comboBoxKluby.SelectedItem, hrac.textBoxGoly.Text);
         }
     }
 }

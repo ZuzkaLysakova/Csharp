@@ -16,5 +16,9 @@ namespace LigaMistru
         {
             return $"{Jmeno} (klub: {Klub}, golu: {GolPocet})";
         }
+
+        internal class textBoxJmeno
+        {
+        }
     }
 }
